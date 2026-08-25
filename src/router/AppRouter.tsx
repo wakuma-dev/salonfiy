@@ -55,6 +55,6 @@ const router = createBrowserRouter([
    
 ],
 {
-    basename: "/salonify"
+    basename: "/salonfiy"
 });
 export default router;
