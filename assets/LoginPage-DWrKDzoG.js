@@ -1,0 +1,1 @@
+import{E as e}from"./index-IlX38Ref.js";var t=e(),n=()=>(0,t.jsx)(`div`,{children:`LoginPage`});export{n as default};
