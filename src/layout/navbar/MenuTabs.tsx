@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "@/store/Store";
 export default function MenuTabs(){
-    const navigate = useNavigate();
+  
     const theme = useStore((state) => state.theme);
     const [activeTab, setActiveTab] = useState("treatment");
     const [isOpen, setIsOpen] = useState(false);
