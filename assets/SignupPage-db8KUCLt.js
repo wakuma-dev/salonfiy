@@ -1,1 +1,0 @@
-import{E as e}from"./index-DqzF3qKo.js";var t=e(),n=()=>(0,t.jsx)(`div`,{children:`SignupPage`});export{n as default};
