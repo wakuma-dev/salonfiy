@@ -9,7 +9,7 @@ export default function MenuButton(){
     return(
         <Popover aria-label="Open menu">
             <PopoverTrigger render={<Button variant="outline" 
-            className={`border transition-colors
+            className={`border transition-colors  cursor-pointer
             ${theme === "light" ? "border-[#DDDDDD] bg-white hover:bg-[#f7f7f7]" : 
             "border-[#444444] bg-[#1e1e1e] text-[#f5f5f5] hover:bg-[#292929]"}`}><MenuIcon /></Button>} />
             <PopoverContent align="end" className={`${theme === "light" ? "bg-[#ffffff] text-black" : "bg-[#1e1e1e] text-white"}`} >

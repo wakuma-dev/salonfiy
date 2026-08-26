@@ -14,7 +14,7 @@ return (
             isLight ? "border-gray-300" : "border-gray-700"
           }`}
         >
-          <div className="flex flex-col items-start md:items-center justify-between gap-2 md:flex-row">
+          <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
             <p className="text-[14px] leading-[20px] text-[#64748b] font-normal">
               © {new Date().getFullYear()} Salonify. All rights reserved.
             </p>

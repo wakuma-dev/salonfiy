@@ -11,7 +11,7 @@ type InputProps<T extends FieldValues> = UseControllerProps<T> &
 Omit<ComponentPropsWithoutRef<typeof Input>, "name" | "value" | "defaultValue" | "onChange"> & {
    name: FieldPath<T>;
    label: string;
-   isPasswordField: boolean;
+   isPasswordField?: boolean;
 }
 export function MyInput<T extends FieldValues>({
     name,
