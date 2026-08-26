@@ -218,6 +218,11 @@ const SignupPage = () => {
                    label="I agree to the Terms of Service and Privacy Policy"
                    name="agreeTerms"
                    />
+                   {registerError && (
+                      <p className="text-red-400 text-xs">
+                        {registerError}
+                      </p>
+                   )}
                    <button
                   type="submit"
                   disabled={isSubmitting}
