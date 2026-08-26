@@ -1,1 +1,0 @@
-import{E as e}from"./index-Cj7ZCmAH.js";var t=e(),n=()=>(0,t.jsx)(`div`,{children:`LoginPage`});export{n as default};
