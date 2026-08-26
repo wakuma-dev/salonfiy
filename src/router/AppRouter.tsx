@@ -3,9 +3,9 @@ import { Suspense, lazy, type ComponentType } from "react";
 import MainLayout from "@/layout/MainLayout";
 import AuthLayout from "@/layout/AuthLayout";
 import ProtectedRoute from "./ProtectedRoute";
-
+import HomePage from "../pages/home/Home";
 import RouteErrorBoundary from "@/components/error/RouteErrorBoundary";
-const HomePage = lazy(() => import("../pages/home/Home"));
+
 const LoginPage = lazy(() => import("../pages/LoginPage"));
 const SignupPage = lazy(() => import("../pages/SignupPage"));
 const WishlistPage = lazy(() => import("../pages/WishlistPage"));
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: withSuspense(HomePage)
+                element: <HomePage />
             }
         ]
     },
