@@ -35,19 +35,19 @@ interface Props {
 const items: Props[] = [
   {
     icon: Check,
-    desc: "Easy online booking 24/7",
+    desc: "Book beauty services anytime, anywhere",
     iconBg: "bg-[#7D53BF]",
     iconText: "text-[#ffffff]",
   },
   {
     icon: Check,
-    desc: "Verified reviews from real customers",
+    desc: "Save your favorite services",
     iconBg: "bg-[#7D53BF]",
     iconText: "text-[#ffffff]",
   },
   {
     icon: Check,
-    desc: "Verified reviews from real customers",
+    desc: "Keep track of all your appointments",
     iconBg: "bg-[#7D53BF]",
     iconText: "text-[#ffffff]",
   },
@@ -111,7 +111,7 @@ const LoginPage = () => {
 
   return (
     <section
-      className={`relative w-full min-h-screen overflow-hidden ${
+      className={`w-full min-h-screen overflow-hidden ${
         theme === "light"
           ? "bg-[#f7f7f7] text-black"
           : "bg-[#121212] text-white"
@@ -145,7 +145,7 @@ const LoginPage = () => {
 
           <div className="hidden lg:flex flex-col gap-6">
             <span className="uppercase tracking-widest text-[12px] leading-[16px]">
-              Salonfiy
+              Salonify
             </span>
 
             <h1 className="text-[40px] leading-[40px] max-w-lg font-bold">
@@ -153,8 +153,7 @@ const LoginPage = () => {
             </h1>
 
             <p className="max-w-lg text-[14px] leading-[20px] font-normal">
-              Discover and book appointments with the best salons, spas, and
-              wellness providers in your area.
+             Welcome back to Salonify. Log in to manage your appointments and enjoy a seamless salon experience.
             </p>
 
             <div className="flex flex-col gap-2">
@@ -182,9 +181,9 @@ const LoginPage = () => {
           </div>
         </div>
 
-        <div className="relative z-10 p-4 md:p-10 w-full lg:w-1/2 flex flex-1 items-start lg:items-center justify-center min-h-[calc(100dvh-5rem)] -mt-16 md:mt-20 lg:mt-0">
+        <div className="relative z-10 p-4 md:p-10 w-full lg:w-1/2 flex flex-1 items-start lg:items-center justify-center min-h-[calc(100dvh-5rem)] -mt-16 -md:mt-20 lg:mt-0">
           <Card
-            className={`w-full max-w-[420px] p-2.5 md:px-4 py-6 rounded-2xl ${
+            className={`w-full max-w-[420px] px-2.5 md:px-4 py-6 rounded-2xl ${
               theme === "light" ? "bg-white" : "bg-black"
             }`}
           >

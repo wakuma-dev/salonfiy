@@ -4,17 +4,17 @@ export default function FooterBottom() {
   const isLight = theme === "light";
 return (
     <section
-      className={`w-full ${
+      className={`w-full pb-10 md:pb-0 ${
         isLight ? "bg-[#f7f7f7] text-black" : "bg-[#121212] text-white"
       }`}
     >
-      <div className="">
+      <div className="mx-auto">
         <div
           className={`w-full border-t py-3 md:py-6 ${
             isLight ? "border-gray-300" : "border-gray-700"
           }`}
         >
-          <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
+          <div className="flex flex-col it items-center justify-between gap-2 md:flex-row">
             <p className="text-[14px] leading-[20px] text-[#64748b] font-normal">
               © {new Date().getFullYear()} Salonify. All rights reserved.
             </p>

@@ -28,7 +28,7 @@ export function MyCheckbox<T extends FieldValues>({
     });
     return(
         <Field>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-start lg:items-center space-x-2">
                 <Checkbox
                  id={field.name}
                  {...checkboxProps}
@@ -36,7 +36,7 @@ export function MyCheckbox<T extends FieldValues>({
                  onCheckedChange={field.onChange}
                  disabled={field.disabled}
                  />
-                <FieldLabel htmlFor={field.name}>
+                <FieldLabel htmlFor={field.name} className="text-[14px] leading-[18px] font-normal">
                     {label}
                 </FieldLabel>
             </div>
