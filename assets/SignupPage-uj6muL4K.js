@@ -1,1 +1,0 @@
-import{t as e}from"./index-CTJQ5_es.js";var t=e(),n=()=>(0,t.jsx)(`div`,{children:`SignupPage`});export{n as default};
