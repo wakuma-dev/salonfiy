@@ -1,1 +1,0 @@
-import{t as e}from"./index-B1WxO_zb.js";var t=e(),n=()=>(0,t.jsx)(`div`,{children:`SignupPage`});export{n as default};

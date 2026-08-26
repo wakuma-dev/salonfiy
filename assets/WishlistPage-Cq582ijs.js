@@ -1,0 +1,1 @@
+import{b as e}from"./index-Bs1IN9Mz.js";var t=e();function n(){return(0,t.jsx)(`h1`,{children:`Abebe`})}export{n as default};
