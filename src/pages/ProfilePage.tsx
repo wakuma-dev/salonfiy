@@ -12,13 +12,13 @@ export default function ProfilePage() {
   const firstName = userData?.firstName;
   const firstLetter = userData?.email?.charAt(0).toUpperCase();
   return (
-    <main className={`w-full min-h-screen py-4 ${theme === "light" ? "bg-[#f7f7f7] text-black" :  "bg-[#121212] text-white"}`}>
+    <main className={`w-full min-h-screen ${theme === "light" ? "bg-[#f7f7f7] text-black" :  "bg-[#121212] text-white"}`}>
       <Helmet>
         <title>Profile | Salonify</title>
         <meta name="description" 
               content="Manage your salonify profile and account information" />
       </Helmet>
-      <div className={`w-full hidden md:block border-t ${theme === "light" ?  "border-gray-300" : "border-gray-700"}`} />
+     
       <div className="max-w-9/10  mx-auto grid grid-cols-1 gap-4 lg:grid-cols-[40%_60%] lg:h-screen">
        <div className={`md:py-4 flex flex-col items-start gap-3 lg:border-r
         ${theme === "light" ? "border-gray-300" : "border-gray-700" }`}>

@@ -22,7 +22,7 @@ type AuthStore = AuthState & AuthAction;
 export const useAuthStore = create<AuthStore>()(
     devtools((set) => ({
             user: null,
-            loading: false,
+            loading: true,
             error: null,
             setUser: (user) => set({user}),
             setLoading: (loading) => set({loading}),
