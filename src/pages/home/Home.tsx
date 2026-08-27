@@ -3,6 +3,9 @@ import Hero from "./components/Hero";
 import Banner from "./components/Banner";
 import Faq from "./components/Faq";
 import HowItWorks from "./components/HowItWorks";
+import ServiceCategories from "@/features/services/components/ServiceCategories";
+import ServiceCard from "@/features/services/components/ServiceCard";
+import Services from "@/features/services/pages/Services";
 export default function Home(){
     return(
      <>
@@ -12,6 +15,7 @@ export default function Home(){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
      </Helmet>
      <Hero />
+     <Services />
      <Banner />
      <HowItWorks />
      <Faq />
