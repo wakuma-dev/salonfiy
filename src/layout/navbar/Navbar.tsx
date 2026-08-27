@@ -2,8 +2,11 @@ import { useStore } from "@/store/Store";
 import Logo from "./Logo";
 import MenuButton from "./MenuButton";
 import MenuTabs from "./MenuTabs";
-
-export default function Navbar() {
+import ProfileAvatar from "@/features/user/components/ProfileAvatar";
+interface NavbarProps {
+  hideMenuTabs: boolean;
+}
+export default function Navbar({hideMenuTabs}: NavbarProps) {
   const theme = useStore((state) => state.theme);
 
   return (
@@ -15,9 +18,13 @@ export default function Navbar() {
     >
       <div className="mx-auto hidden w-[90%] items-center justify-between md:flex py-5">
         <Logo />
-        <MenuTabs />
+        {!hideMenuTabs && <MenuTabs />}
+        <div className="flex gap-3">
+        <ProfileAvatar />
         <MenuButton />
+        </div>
       </div>
+         <div className={`w-full hidden md:block border-t ${theme === "light" ?  "border-gray-300" : "border-gray-700"}`} />
     </nav>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useStore } from "@/store/Store";
+
 import {
   useForm,
   type SubmitHandler,
@@ -24,6 +25,7 @@ import { login } from "@/features/auth/services/authService";
 import bgBanner from "../assets/596837f77ff5f6db5b98de824c66a883.jpg";
 import { Check, type LucideIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import Loader from "@/common/Loader";
 
 interface Props {
   icon: LucideIcon;
@@ -63,7 +65,7 @@ const LoginPage = () => {
   function getFirebaseLoginError(error: FirebaseError): string {
     switch (error.code) {
       case "auth/invalid-credential":
-        return "Invalid email or password";
+        return "Incorrect email or password";
       case "auth/user-not-found":
         return "User not found";
       case "auth/wrong-password":
@@ -236,7 +238,7 @@ const LoginPage = () => {
                     theme === "light" ? "text-white" : "text-black"
                   }`}
                 >
-                  {isSubmitting ? "abebe" : "Sign In"}
+                  {isSubmitting ? (<Loader />) : ("Sign In")}
                 </button>
               </form>
 

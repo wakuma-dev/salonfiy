@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet-async";
 import { MyCheckbox } from "@/features/auth/components/FormCheckbox";
 import bgBanner from "../assets/f48ed71ef140bab0546c3ac5df7bdcc4.jpg";
 import { Check, type LucideIcon } from "lucide-react";
+import Loader from "@/common/Loader";
 interface Props {
     icon: LucideIcon;
     desc: string;
@@ -230,7 +231,7 @@ const SignupPage = () => {
                     theme === "light" ? "text-white" : "text-black"
                   }`}
                 >
-                  {isSubmitting ? "abebe" : "Sign up"}
+                  {isSubmitting ? (<Loader />) : ("Sign up")}
                 </button>
                 </form>
                 <div className="flex items-center justify-center my-4">

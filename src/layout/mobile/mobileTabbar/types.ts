@@ -13,7 +13,7 @@ export const tabBars: TabbarProps[] = [
     },
     {
       icon: User,
-      path: "/login"
+      path: "/profile"
     }
   
 ]

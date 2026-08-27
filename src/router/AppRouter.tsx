@@ -5,57 +5,66 @@ import AuthLayout from "@/layout/AuthLayout";
 import ProtectedRoute from "./ProtectedRoute";
 import HomePage from "../pages/home/Home";
 import RouteErrorBoundary from "@/components/error/RouteErrorBoundary";
-
+import SuspenseLoader from "@/common/SuspenseLoader";
 const LoginPage = lazy(() => import("../pages/LoginPage"));
 const SignupPage = lazy(() => import("../pages/SignupPage"));
 const WishlistPage = lazy(() => import("../pages/WishlistPage"));
 const NotFound = lazy(() => import("../pages/NotFound"));
+const ProfilePage = lazy(() => import("../pages/ProfilePage"));
 const withSuspense = (Component: ComponentType) => (
     <RouteErrorBoundary>
-    <Suspense fallback={<div>loading...</div>}>
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen">
+        <SuspenseLoader /></div>}>
         <Component />
     </Suspense>
     </RouteErrorBoundary>
 );
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
     {
-        element: <MainLayout />,
-        children: [
+      element: <MainLayout />,
+      children: [
+        {
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          element: <ProtectedRoute />,
+          children: [
             {
-                path: "/",
-                element: <HomePage />
-            }
-        ]
-    },
-    {
-        element: <AuthLayout />,
-        children: [
-            {
-                path: "/login",
-                element: withSuspense(LoginPage)
+              path: "/wishlist",
+              element: withSuspense(WishlistPage),
             },
             {
-                path: "/signup",
-                element: withSuspense(SignupPage)
-            }
-        ]
+              path: "/profile",
+              element: withSuspense(ProfilePage),
+            },
+          ],
+        },
+      ],
     },
+
     {
-        element: <ProtectedRoute />,
-        children: [
-            {
-                path: "/wishlist",
-                element: withSuspense(WishlistPage)
-            }
-        ],
+      element: <AuthLayout />,
+      children: [
+        {
+          path: "/login",
+          element: withSuspense(LoginPage),
+        },
+        {
+          path: "/signup",
+          element: withSuspense(SignupPage),
+        },
+      ],
     },
-     {
-        path: "*",
-        element: withSuspense(NotFound)
-    }
-   
-],
-{
-    basename: "/salonfiy"
-});
+
+    {
+      path: "*",
+      element: withSuspense(NotFound),
+    },
+  ],
+  {
+    basename: "/salonfiy",
+  }
+);
 export default router;

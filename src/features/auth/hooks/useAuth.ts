@@ -11,7 +11,9 @@ export default function useAuth(){
     const unsubscribe = onAuthStateChanged(auth, (user) => {
         setUser(user);
         setLoading(false);
-        return () => unsubscribe();
-    })
+       
+    });
+     return () => unsubscribe();
+
     }, [setUser, setLoading]);
  }
