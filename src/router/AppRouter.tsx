@@ -6,6 +6,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import HomePage from "../pages/home/Home";
 import RouteErrorBoundary from "@/components/error/RouteErrorBoundary";
 import SuspenseLoader from "@/common/SuspenseLoader";
+const ServiceDetails = lazy(() => import("../pages/ServiceDetails"));
 const LoginPage = lazy(() => import("../pages/LoginPage"));
 const SignupPage = lazy(() => import("../pages/SignupPage"));
 const WishlistPage = lazy(() => import("../pages/WishlistPage"));
@@ -27,6 +28,10 @@ const router = createBrowserRouter(
         {
           path: "/",
           element: <HomePage />,
+        },
+        {
+          path: "service/:serviceId",
+          element: withSuspense(ServiceDetails),
         },
         {
           element: <ProtectedRoute />,

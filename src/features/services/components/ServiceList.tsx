@@ -9,9 +9,18 @@ export default function ServiceList({
   services,
 }: ServiceListProps) {
   return (
-    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-4">
+    <div className="flex gap-3 lg:gap-4">
       {services.map((service) => (
-        <div key={service.id} className="min-w-0">
+        <div
+          key={service.id}
+          className="
+            w-[42vw]
+            shrink-0
+            sm:w-[35vw]
+            md:w-[30%]
+            lg:w-[calc((100%-4rem)/5)]
+          "
+        >
           <ServiceCard service={service} />
         </div>
       ))}

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import ServiceList from "./ServiceList";
 import services from "../data/services";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
+import { useStore } from "@/store/Store";
 interface ServiceProps {
   title: string;
   tag: "recommend" | "new" | "trending";
@@ -15,7 +15,7 @@ export default function ServiceRow({
   category,
 }: ServiceProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
-
+  const theme = useStore((state) => state.theme)
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
 
@@ -81,56 +81,25 @@ export default function ServiceRow({
     return null;
   }
 
-  const groups = [];
-
-  for (let i = 0; i < filteredServices.length; i += 5) {
-    groups.push(filteredServices.slice(i, i + 5));
-  }
-
   return (
     <section className="relative w-full">
       <h3 className="mb-4">{title}</h3>
 
       <div
         ref={scrollRef}
-        className="
-          w-full
-          overflow-x-auto
-          scroll-smooth
-          snap-x
-          snap-mandatory
-          scrollbar-hide
-          overscroll-x-contain
-        "
+        className="w-full overflow-x-auto scroll-smooth scrollbar-hide"
       >
-        <div className="flex w-full">
-          {groups.map((group, index) => (
-            <div
-              key={index}
-              className="
-                min-w-full
-                w-full
-                shrink-0
-                snap-start
-                px-1
-                sm:px-0
-              "
-            >
-              <ServiceList services={group} />
-            </div>
-          ))}
-        </div>
+        <ServiceList services={filteredServices} />
       </div>
 
-      {/* Left */}
       {canScrollLeft && (
         <button
           type="button"
-          aria-label="Previous services"
+          aria-label="Scroll services left"
           onClick={() => scrollServices("left")}
-          className="
+          className={`
             absolute
-            left-2
+            -left-5
             top-1/2
             z-10
             hidden
@@ -138,27 +107,28 @@ export default function ServiceRow({
             items-center
             justify-center
             rounded-full
-            bg-white
             p-2
             shadow-md
-            transition
-            hover:scale-105
+            cursor-pointer
             md:flex
-          "
+             ${theme === "light"
+      ? "bg-white text-black hover:bg-gray-100"
+      : "bg-[#1e1e1e] text-white hover:bg-[#2a2a2a]"
+  }
+          `}
         >
           <ChevronLeft size={20} />
         </button>
       )}
 
-      {/* Right */}
       {canScrollRight && (
         <button
           type="button"
-          aria-label="Next services"
+          aria-label="Scroll services right"
           onClick={() => scrollServices("right")}
-          className="
+          className={`
             absolute
-            right-2
+            -right-4
             top-1/2
             z-10
             hidden
@@ -166,13 +136,15 @@ export default function ServiceRow({
             items-center
             justify-center
             rounded-full
-            bg-white
             p-2
             shadow-md
-            transition
-            hover:scale-105
+            cursor-pointer
             md:flex
-          "
+            ${theme === "light"
+      ? "bg-white text-black hover:bg-gray-100"
+      : "bg-[#1e1e1e] text-white hover:bg-[#2a2a2a]"
+  }
+          `}
         >
           <ChevronRight size={20} />
         </button>
