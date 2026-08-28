@@ -1,49 +1,17 @@
-import { useMemo } from "react";
-import { useStore } from "@/store/Store";
-import services from "../data/services";
 import ServiceCard from "./ServiceCard";
+import type { Service } from "@/store/service.types";
 
-export default function ServicesList() {
-  const selectedCategory = useStore(
-    (state) => state.selectedCategory
-  );
+interface ServiceListProps {
+  services: Service[];
+}
 
-  const categoryServices = useMemo(
-    () =>
-      services.filter(
-        (service) => service.category === selectedCategory
-      ),
-    [selectedCategory]
-  );
-
+export default function ServiceList({
+  services,
+}: ServiceListProps) {
   return (
-    <div
-      className="
-        grid
-        grid-cols-5
-        gap-4
-
-        max-lg:grid-cols-4
-        max-md:grid-cols-3
-
-        max-sm:flex
-        max-sm:gap-4
-        max-sm:overflow-x-auto
-        max-sm:pb-3
-        max-sm:snap-x
-        max-sm:snap-mandatory
-        scrollbar-hide
-      "
-    >
-      {categoryServices.map((service) => (
-        <div
-          key={service.id}
-          className="
-            max-sm:w-[75%]
-            max-sm:min-w-[75%]
-            max-sm:snap-start
-          "
-        >
+    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-4">
+      {services.map((service) => (
+        <div key={service.id} className="min-w-0">
           <ServiceCard service={service} />
         </div>
       ))}
