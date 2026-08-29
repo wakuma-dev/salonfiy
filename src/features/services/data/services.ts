@@ -16,7 +16,25 @@ import img13 from "../../../assets/61d356c6c98fb54b711fd2ed5002991e.jpg";
 import img14 from "../../../assets/60d013e75baeb253941be6d1d7817ec7.jpg";
 import img15 from "../../../assets/3af41bccb160cad8efe331a170670586.jpg";
 
+import img16 from "../../../assets/5961486792496c5d878f7bcbfc04657f.jpg";
+import img17 from "../../../assets/0271f82f427a22b7db3b01261f55d5f8.jpg";
+import img18 from "../../../assets/a74e9de64ea6ef19c040b7374a731a94.jpg";
+import img19 from "../../../assets/cdf34732ec1318e7ee153b68014f2035.jpg";
+import img20 from "../../../assets/446ab7162539a66b630b72c47f616fc8.jpg";
+import img21 from "../../../assets/2f5aa4af68b424cc5baab8200693d012.jpg";
+import img22 from "../../../assets/6e5734717c11458f5b942f87f4cb2da7.jpg";
+import img23 from "../../../assets/ad2597828526f944a43fd4c7bbc6a3a0.jpg";
+import img24 from "../../../assets/19b99cadc1a332ab806a9d24d8e3efbc.jpg";
+import img25 from "../../../assets/e189b0e7aa76682cce7fd530dea9b3b2.jpg";
+import img26 from "../../../assets/fa258d172805d8fe0b4ed3c46e2d5140.jpg";
+import img27 from "../../../assets/e0e50988d448dce1b387b6e917538617.jpg";
+import img28 from "../../../assets/b495816fd16d7aacc6874e53756a088b.jpg";
+import img29 from "../../../assets/2d3d2d8689f1e6ca03d6d8ceabf8f2a9.jpg";
+import img30 from "../../../assets/5a236b49b67b83a1f6e5e5ff9003c965.jpg";
+
 const services: Service[] = [
+  // ==================== HAIR SERVICES ====================
+
   {
     id: "8472936150291847",
     name: "Layered Bob",
@@ -25,7 +43,7 @@ const services: Service[] = [
     price: 240,
     image: img,
     duration: 40,
-    tags: ["trending", "recommend"],
+    tags: ["recommend"],
   },
   {
     id: "3928174650837261",
@@ -35,7 +53,7 @@ const services: Service[] = [
     price: 800,
     image: img2,
     duration: 140,
-    tags: ["new", "trending"],
+    tags: ["new"],
   },
   {
     id: "7159042836174509",
@@ -45,7 +63,7 @@ const services: Service[] = [
     price: 1000,
     image: img3,
     duration: 90,
-    tags: ["trending", "recommend"],
+    tags: ["trending"],
   },
   {
     id: "5817362940185726",
@@ -75,7 +93,7 @@ const services: Service[] = [
     price: 400,
     image: img6,
     duration: 60,
-    tags: ["trending", "new"],
+    tags: ["trending"],
   },
   {
     id: "4287193650826147",
@@ -95,7 +113,7 @@ const services: Service[] = [
     price: 400,
     image: img8,
     duration: 40,
-    tags: ["trending", "recommend"],
+    tags: ["trending", "new"],
   },
   {
     id: "8192645370184925",
@@ -105,7 +123,7 @@ const services: Service[] = [
     price: 240,
     image: img9,
     duration: 40,
-    tags: ["new"],
+    tags: ["trending"],
   },
   {
     id: "3508174629385107",
@@ -115,7 +133,7 @@ const services: Service[] = [
     price: 540,
     image: img10,
     duration: 40,
-    tags: ["trending", "recommend"],
+    tags: ["recommend"],
   },
   {
     id: "7926154308172649",
@@ -125,7 +143,7 @@ const services: Service[] = [
     price: 240,
     image: img11,
     duration: 40,
-    tags: ["new", "recommend"],
+    tags: ["trending", "recommend"],
   },
   {
     id: "5148273961057382",
@@ -145,7 +163,7 @@ const services: Service[] = [
     price: 240,
     image: img13,
     duration: 40,
-    tags: ["recommend", "new"],
+    tags: ["new"],
   },
   {
     id: "2479361850247619",
@@ -155,7 +173,7 @@ const services: Service[] = [
     price: 240,
     image: img14,
     duration: 40,
-    tags: ["trending", "recommend"],
+    tags: ["trending", "new"],
   },
   {
     id: "9037146825193046",
@@ -165,9 +183,164 @@ const services: Service[] = [
     price: 240,
     image: img15,
     duration: 40,
+    tags: ["recommend"],
+  },
+
+  // ==================== HAND NAIL DESIGNS ====================
+
+  {
+    id: "1162847395018274",
+    name: "Classic French Nails",
+    category: "Nails",
+    info: "Elevate your hands with a timeless French nail design that combines elegance with simplicity. Each nail is carefully shaped and styled with clean, refined details for a polished appearance. The design works beautifully for everyday wear, professional settings, and special occasions. Enjoy a sophisticated manicure look that remains stylish, versatile, and effortlessly beautiful.",
+    price: 350,
+    image: img16,
+    duration: 60,
+    tags: ["recommend"],
+  },
+  {
+    id: "2847195630184725",
+    name: "Glossy Nude Nails",
+    category: "Nails",
+    info: "Enjoy a clean and elegant nail design featuring soft nude tones and a beautiful glossy finish. The look is designed to complement different styles while keeping your hands looking naturally refined. Every detail is carefully considered to create a smooth, polished appearance. Perfect for anyone who loves a subtle nail design with timeless beauty and effortless charm.",
+    price: 400,
+    image: img17,
+    duration: 60,
+    tags: ["new"],
+  },
+  {
+    id: "3958172046381592",
+    name: "Floral Nail Art",
+    category: "Nails",
+    info: "Express your personality with a beautiful floral nail design filled with delicate artistic details. Each nail is styled to create a balanced and eye-catching look that feels fresh and feminine. The design adds a creative touch while maintaining an elegant overall appearance. A wonderful choice for special occasions or whenever you want your nails to stand out beautifully.",
+    price: 500,
+    image: img18,
+    duration: 80,
+    tags: ["trending", "new"],
+  },
+  {
+    id: "4729501836472059",
+    name: "Elegant Chrome Nails",
+    category: "Nails",
+    info: "Make a statement with a stunning chrome nail design featuring a smooth and luminous finish. The reflective details create a modern look that catches the light beautifully from every angle. Carefully styled for a clean and sophisticated appearance, this design feels bold without losing elegance. Perfect for anyone who wants fashionable nails with a luxurious and contemporary touch.",
+    price: 550,
+    image: img19,
+    duration: 75,
+    tags: ["trending"],
+  },
+  {
+    id: "5830164927501836",
+    name: "Pink Glam Nails",
+    category: "Nails",
+    info: "Add a touch of glamour to your hands with a beautiful pink nail design full of style and personality. The carefully selected details create a feminine look that feels playful, polished, and elegant. Each nail contributes to a balanced finish that looks beautiful from every angle. Perfect for celebrations, dates, or simply treating yourself to something special.",
+    price: 450,
+    image: img20,
+    duration: 70,
+    tags: ["recommend"],
+  },
+  {
+    id: "6942051837462915",
+    name: "Minimalist Nail Design",
+    category: "Nails",
+    info: "Discover the beauty of simplicity with a modern minimalist nail design featuring clean and stylish details. The subtle artwork creates an elegant appearance without feeling overwhelming or overly complicated. This look is carefully balanced to complement your natural style and everyday wardrobe. A perfect choice for anyone who appreciates understated beauty with a contemporary touch.",
+    price: 400,
+    image: img21,
+    duration: 60,
+    tags: ["trending"],
+  },
+  {
+    id: "7059182640358172",
+    name: "Sparkle Nail Art",
+    category: "Nails",
+    info: "Bring extra shine to your look with a sparkling nail design created to catch attention beautifully. The decorative details add glamour and personality while maintaining a polished and elegant overall finish. Each nail is designed to work together for a balanced and eye-catching appearance. Perfect for parties, celebrations, and moments when you want to shine with confidence.",
+    price: 550,
+    image: img22,
+    duration: 80,
+    tags: ["new"],
+  },
+  {
+    id: "8162749501836204",
+    name: "Luxury Nail Design",
+    category: "Nails",
+    info: "Treat your hands to a luxurious nail design created with beautiful details and a sophisticated finish. The artistic styling brings together elegance, creativity, and modern beauty for a truly standout appearance. Every nail is carefully designed to create harmony across the complete look. An excellent choice for anyone who wants their manicure to feel special, fashionable, and unforgettable.",
+    price: 650,
+    image: img23,
+    duration: 90,
+    tags: ["trending", "recommend"],
+  },
+
+  // ==================== FOOT NAIL DESIGNS ====================
+
+  {
+    id: "9274051836207491",
+    name: "Classic Toe Nail Design",
+    category: "Nails",
+    info: "Complete your look with a beautiful and polished toenail design created for effortless elegance. The design focuses on clean details and a stylish finish that makes your feet look beautifully put together. Every element is carefully arranged to create a balanced and attractive appearance. Perfect for everyday confidence, holidays, sandals, and any occasion where you want to look your best.",
+    price: 350,
+    image: img24,
+    duration: 50,
+    tags: ["recommend"],
+  },
+  {
+    id: "0385162947501836",
+    name: "French Toe Nails",
+    category: "Nails",
+    info: "Enjoy a timeless French-inspired toenail design that brings a clean and elegant touch to your overall look. The carefully styled details create a refined appearance that works beautifully with different outfits and occasions. Simple yet sophisticated, this design never goes out of style. A perfect choice for anyone who loves classic beauty with a fresh and polished finish.",
+    price: 400,
+    image: img25,
+    duration: 55,
+    tags: ["trending"],
+  },
+  {
+    id: "1496273051847295",
+    name: "Floral Toe Nail Art",
+    category: "Nails",
+    info: "Add a creative and feminine touch to your feet with beautifully designed floral toenail art. The delicate decorative details create a fresh and charming appearance that feels perfect for warm weather and special occasions. Each element is thoughtfully placed to create a harmonious overall design. Enjoy a playful yet elegant style that gives your toes extra personality and beauty.",
+    price: 450,
+    image: img26,
+    duration: 65,
+    tags: ["new"],
+  },
+  {
+    id: "2507384162950384",
+    name: "Glossy Toe Nails",
+    category: "Nails",
+    info: "Give your feet a fresh and polished appearance with a beautifully glossy toenail design. The smooth finish creates a clean, refined look that feels simple while still making a stylish statement. Carefully selected details help create an attractive design that complements many different looks. Perfect for anyone who wants elegant toes with a modern and effortlessly beautiful finish.",
+    price: 350,
+    image: img27,
+    duration: 50,
+    tags: ["recommend", "trending"],
+  },
+  {
+    id: "3618495273061492",
+    name: "Summer Toe Nail Design",
+    category: "Nails",
+    info: "Celebrate a bright and stylish look with a beautiful toenail design inspired by fresh summer beauty. The creative details bring personality and color together for an eye-catching finish that looks amazing with sandals. Every nail is designed to complement the overall style while keeping the look balanced. Perfect for vacations, sunny days, and creating confident seasonal style.",
+    price: 450,
+    image: img28,
+    duration: 60,
     tags: ["new", "recommend"],
+  },
+  {
+    id: "4729506384172503",
+    name: "Elegant Toe Nail Design",
+    category: "Nails",
+    info: "Enjoy a sophisticated toenail design created to give your feet an elegant and beautifully finished appearance. The design combines stylish details with a refined overall look that works for both everyday wear and special events. Each nail is carefully styled to create consistency and visual balance. A beautiful choice when you want a polished and graceful look from head to toe.",
+    price: 500,
+    image: img29,
+    duration: 70,
+    tags: ["trending", "recommend"],
+  },
+  {
+    id: "5830617495283614",
+    name: "Glamorous Toe Nail Art",
+    category: "Nails",
+    info: "Make your feet stand out with a glamorous toenail design featuring beautiful artistic details and a stylish finish. The look is created to feel confident, fashionable, and perfect for showing off your personal style. Carefully arranged elements bring the entire design together for a stunning result. Ideal for special occasions or whenever you want to add extra glamour to your look.",
+    price: 550,
+    image: img30,
+    duration: 75,
+    tags: ["new", "trending"],
   },
 ];
 
 export default services;
-
