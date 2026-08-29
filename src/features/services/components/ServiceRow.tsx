@@ -3,17 +3,22 @@ import ServiceList from "./ServiceList";
 import services from "../data/services";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useStore } from "@/store/Store";
+import { MoveRight } from "lucide-react";
 interface ServiceProps {
   title: string;
+  subTitle: string;
   tag: "recommend" | "new" | "trending";
   category: string;
 }
 
 export default function ServiceRow({
   title,
+  subTitle,
   tag,
   category,
 }: ServiceProps) {
+  console.log("title", title);
+  console.log("subTitle", subTitle)
   const scrollRef = useRef<HTMLDivElement>(null);
   const theme = useStore((state) => state.theme)
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -83,13 +88,25 @@ export default function ServiceRow({
 
   return (
     <section className="relative w-full">
-      <h3 className="mb-4">{title}</h3>
-
+    <div className="flex items-center justify-between w-full my-2">
+    <div className="flex flex-col items-start gap-0.5">
+    <h3 className="text-[20px] leading-[24px] md:text-[27px] leading-[32px] font-bold">{title}</h3>
+    <p className="max-w-[200px] md:max-w-full text-[14px] leading-[20px] md:text-[16px] md:leading-[24px] font-normal text-[#64748b]">
+   {subTitle}
+</p>
+    </div>
+    <div className={`flex items-center justify-center 
+                    w-8 h-8 md:w-9 md:h-9 cursor-pointer bg-black rounded-full
+                    ${theme === "light" ? "bg-white" : "bg-[#2A2A2A]"}`}>
+    <MoveRight className="w-4  h-4 md:w-5 md:h-5"/>
+    </div>
+       </div>
       <div
         ref={scrollRef}
         className="w-full overflow-x-auto scroll-smooth scrollbar-hide"
       >
         <ServiceList services={filteredServices} />
+        
       </div>
 
       {canScrollLeft && (

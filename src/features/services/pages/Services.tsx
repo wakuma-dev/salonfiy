@@ -8,7 +8,7 @@ const selectedCategory = useStore((state) => state.selectedCategory);
 
 return (
 <section
-className={`w-full min-h-screen pb-10 ${
+className={`w-full min-h-screen pb-6 ${
         theme === "light"
           ? "bg-[#f7f7f7] text-black"
           : "bg-[#121212] text-white"
@@ -18,18 +18,21 @@ className={`w-full min-h-screen pb-10 ${
   <div className="mx-auto max-w-9/10">
     <ServiceRow
       title="Recommended for You"
+      subTitle="Handpicked services based on what you love"
       tag="recommend"
       category={selectedCategory}
     />
 
     <ServiceRow
       title="Trending Now"
+      subTitle="Discover the services everyone is loving right now"
       tag="trending"
       category={selectedCategory}
     />
 
     <ServiceRow
       title="New Services"
+      subTitle="Explore the latest services added to our collection"
       tag="new"
       category={selectedCategory}
     />

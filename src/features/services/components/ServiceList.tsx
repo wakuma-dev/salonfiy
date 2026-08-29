@@ -9,7 +9,7 @@ export default function ServiceList({
   services,
 }: ServiceListProps) {
   return (
-    <div className="flex gap-3 lg:gap-4">
+    <div className="flex gap-2 lg:gap-4">
       {services.map((service) => (
         <div
           key={service.id}
