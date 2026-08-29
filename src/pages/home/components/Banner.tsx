@@ -3,7 +3,7 @@ import banner from "../../../assets/pmv-chamara-dMjkQJs58uo-unsplash.jpg";
 export default function Banner(){
     const theme = useStore((state) => state.theme);
     return(
-    <div className={`w-full  ${theme === "light" ? "bg-[#f7f7f7] text-black" : "bg-[#121212] text-white"}`}>
+    <div className={`w-full py-6 ${theme === "light" ? "bg-[#ffffff] text-black" : "bg-[#0d0d0d] text-white"}`}>
         <div className="max-w-9/10 mx-auto flex flex-col items-start 
         gap-2.5 md:gap-4 rounded-3xl p-4 md:p-10"
         style={{backgroundImage: `linear-gradient(to right, rgba(92, 42, 167, 0.9), rgba(126, 96, 144, 0.75)), url(${banner})`,

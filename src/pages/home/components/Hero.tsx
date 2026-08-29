@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 export default function Hero(){
   const theme = useStore((state) => state.theme);
   return(
-    <section className={`w-full h-auto py-4 ${theme === "light" ? "bg-[#f7f7f7] text-black" : "bg-[#121212] text-white" }`}>
+    <section className={`w-full h-auto py-4 ${theme === "light" ? "bg-[#ffffff] text-black" : "bg-[#0d0d0d] text-white" }`}>
     <div className="flex flex-col items-center justify-center text-center gap-3 p-4">
       <div className={`inline-flex items-center border gap-2 py-2 px-4 text-[14px] leading-[18px] font-bold text-[#6d28d9] rounded-full 
         ${theme === "light" ? "border-black" : "border-white"}`}>

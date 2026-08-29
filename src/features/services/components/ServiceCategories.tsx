@@ -17,7 +17,7 @@ export default function ServiceCategories(){
     const categoriesItems = useMemo(() => Categories, []);
     return(
     <div className={`w-full scrollbar-hide overflow-x-auto 
-     ${theme === "light" ? "bg-[#f7f7f7]" : "bg-[#121212] "}`}>
+     ${theme === "light" ? "bg-[#0d0d0d] text-white" : "bg-[#ffffff] text-black"}`}>
         <div className="w-max min-w-full flex items-center md:justify-center gap-1">
         {categoriesItems.map((category) => {
             return(

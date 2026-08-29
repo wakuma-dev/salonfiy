@@ -8,10 +8,10 @@ const selectedCategory = useStore((state) => state.selectedCategory);
 
 return (
 <section
-className={`w-full min-h-screen pb-6 ${
+className={`w-full min-h-screen py-6 ${
         theme === "light"
-          ? "bg-[#f7f7f7] text-black"
-          : "bg-[#121212] text-white"
+          ? "bg-[#0d0d0d] text-white"
+          : "bg-[#ffffff] text-black"
       }`}
 > <ServiceCategories />
 

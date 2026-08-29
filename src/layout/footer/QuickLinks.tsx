@@ -28,7 +28,7 @@ export default function QuickLink(){
             return(
                  <NavLink to={link.path}
                           key={link.path}
-                          className="text-[14px] leading-[20px] text-[#64748b] hover:text-[#7c3aed] font-normal transition-colors duration-150">
+                          className="text-[14px] leading-[20px] hover:text-[#7c3aed] font-normal transition-colors duration-150">
                             {link.label}
                           </NavLink>
             )

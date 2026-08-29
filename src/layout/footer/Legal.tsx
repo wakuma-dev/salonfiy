@@ -29,7 +29,7 @@ export default function Legal(){
             {legals.map((legal) => {
                 return(
                     <NavLink to={legal.path} key={legal.path}
-                    className="text-[14px] leading-[20px] text-[#64748b] hover:text-[#7c3aed] font-normal transition-colors duration-150">
+                    className="text-[14px] leading-[20px]  hover:text-[#7c3aed] font-normal transition-colors duration-150">
                         {legal.label}
                     </NavLink>
                 )

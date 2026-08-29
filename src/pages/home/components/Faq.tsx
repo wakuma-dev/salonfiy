@@ -65,8 +65,8 @@ export default function Faq() {
     <section
       className={`min-h-auto w-full p-4 ${
         theme === "light"
-          ? "bg-[#f7f7f7] text-black"
-          : "bg-[#121212] text-white"
+          ? "bg-[#0d0d0d] text-white"
+          : "bg-[#ffffff] text-black"
       }`}
     >
       {/* Heading */}
@@ -81,7 +81,7 @@ export default function Faq() {
 
       </div>
        <Accordion multiple className={`w-full p-4 rounded-xl my-3 max-w-3xl mx-auto
-         ${theme === "light" ? "text-black bg-white" : "text-white bg-[#1e1e1e]"}`} defaultValue={["faq-1"]}>
+        `} defaultValue={["faq-1"]}>
         {items.map((item) => {
             return(
                 <AccordionItem key={item.value} value={item.value} className="text-[100px]">
