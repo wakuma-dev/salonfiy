@@ -11,10 +11,11 @@ export default function MainLayout(){
     ];
     const hideMenuRoute = [
         "/profile",
-        "/wishlist"
+        "/wishlist",
+        
     ]
     const hideFooter = hideFooterRoute.includes(location.pathname);
-    const hideMenuTabs = hideMenuRoute.includes(location.pathname);
+    const hideMenuTabs = hideMenuRoute.includes(location.pathname) || location.pathname.startsWith("/services");
     return(
         <>
         <ScrollToTop />

@@ -18,7 +18,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       }`}
     >
       <Link
-        to={`/service/${service.id}`}
+        to={`/services/${service.id}`}
         className="block w-full"
       >
         <img

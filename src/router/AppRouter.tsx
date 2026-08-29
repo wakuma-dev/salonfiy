@@ -30,7 +30,7 @@ const router = createBrowserRouter(
           element: <HomePage />,
         },
         {
-          path: "service/:serviceId",
+          path: "services/:serviceId",
           element: withSuspense(ServiceDetails),
         },
         {

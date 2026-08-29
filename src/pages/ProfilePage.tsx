@@ -20,9 +20,9 @@ export default function ProfilePage() {
       </Helmet>
      
       <div className="max-w-9/10  mx-auto grid grid-cols-1 gap-4 lg:grid-cols-[40%_60%] lg:h-screen">
-       <div className={`md:py-4 flex flex-col items-start gap-3 lg:border-r
+       <div className={`py-4 flex flex-col items-start gap-3 lg:border-r
         ${theme === "light" ? "border-gray-300" : "border-gray-700" }`}>
-        <h1 className="text-[32px] leading-[36px] md:text-[40px] md:leading-[42px] font-bold">Profile</h1>
+        <h1 className="text-[30px] leading-[34px] md:text-[40px] md:leading-[42px] font-bold">Profile</h1>
        </div>
      
         <div className="md:py-4 flex flex-col gap-3">
