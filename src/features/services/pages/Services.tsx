@@ -10,8 +10,8 @@ return (
 <section
 className={`w-full min-h-screen py-6 ${
         theme === "light"
-          ? "bg-[#0d0d0d] text-white"
-          : "bg-[#ffffff] text-black"
+          ? "bg-[#fafafa] text-black"
+          : "bg-[#1B1B1B] text-white"
       }`}
 > <ServiceCategories />
 

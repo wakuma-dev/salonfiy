@@ -32,7 +32,7 @@ export default function MenuTabs(){
          className="inline-block relative">
     <Tabs value={isOpen ? activeTab : ""}
           className="hidden min-w-[800px] md:block">
-    <TabsList className={`${theme === "light" ? "border-[#dddddd] bg-white" : "border-[#333333] bg-[#1e1e1e]"}`}>
+    <TabsList className={`${theme === "light" ? "border-[#dddddd] bg-[#F9F9F9]" : "border-[#333333] bg-[#101010]"}`}>
         <TabsTrigger
           value="treatment"
           onClick={() => handleTabClick("treatment")}

@@ -65,17 +65,19 @@ export default function Faq() {
     <section
       className={`min-h-auto w-full p-4 ${
         theme === "light"
-          ? "bg-[#0d0d0d] text-white"
-          : "bg-[#ffffff] text-black"
+          ? "bg-[#fafafa] text-black"
+          : "bg-[#1b1b1b] text-white"
       }`}
     >
       {/* Heading */}
       <div className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-2 px-4 text-center">
-        <h3 className="text-[12px] font-bold leading-[18px] tracking-wider text-[#6d28d9]">
+        <h3 className={`text-[12px] font-bold leading-[18px] tracking-wider
+           ${theme === "light" ? "text-[#5f1a06]" : "text-[#e06e49]"}`}>
           FAQ
         </h3>
 
-        <span className="text-[30px] font-semibold leading-[36px] md:text-[36px] md:leading-[40px]">
+        <span className={`text-[30px] font-semibold leading-[36px] md:text-[36px] md:leading-[40px]
+            ${theme === "light" ? "text-[#111111]" : "text-[#ffffff]"}`}>
           Frequently asked questions
         </span>
 

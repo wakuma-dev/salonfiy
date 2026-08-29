@@ -4,7 +4,7 @@ export default function FooterDescription(){
     return(
         <div className="flex flex-col items-start gap-3 pb-3">
             <NavLink to="/"
-                  className="text-[16px] leading-[24px] font-semibold">
+                  className="text-[16px] leading-[24px] md:text-[30px] md:leading-[36px] tracking-tighter font-semibold">
              Salonify
             </NavLink>
             <p className="text-[14px] leading-[20px] font-normal">

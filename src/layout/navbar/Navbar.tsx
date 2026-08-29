@@ -12,7 +12,7 @@ export default function Navbar({hideMenuTabs}: NavbarProps) {
   return (
     <nav
       className={`fixed top-0 left-0 z-50 w-full backdrop-blur-xl ${
-        theme === "light" ? "bg-[#F7F7F7]" : "bg-[#121212]"
+        theme === "light" ? "bg-[#FFFFFF]" : "bg-[#000000]"
       }`}
       aria-label="Main navigation"
     >

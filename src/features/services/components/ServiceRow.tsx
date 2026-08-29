@@ -90,8 +90,9 @@ export default function ServiceRow({
     <section className="relative w-full">
     <div className="flex items-center justify-between w-full my-2">
     <div className="flex flex-col items-start gap-0.5">
-    <h3 className="text-[20px] leading-[24px] md:text-[27px] leading-[32px] font-bold">{title}</h3>
-    <p className="max-w-[200px] md:max-w-full text-[14px] leading-[20px] md:text-[16px] md:leading-[24px] font-normal text-[#64748b]">
+    <h3 className="text-[20px] leading-[24px] md:text-[27px] leading-[32px] tracking-tight font-bold">{title}</h3>
+    <p className="max-w-[200px] md:max-w-full text-[13px] leading-[19px] md:text-[16px] md:leading-[24px] 
+    font-normal tracking-normal">
    {subTitle}
 </p>
     </div>
