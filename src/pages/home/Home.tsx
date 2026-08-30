@@ -4,6 +4,7 @@ const Hero = lazy(() => import("../home/components/Hero"));
 const HowItWorks = lazy(() => import("../home/components/HowItWorks"));
 const Banner = lazy(() => import("../home/components/Banner"));
 const Faq = lazy(() => import("../home/components/Faq"));
+import SalonVideo from "./components/SalonVideo";
 import HeroSkeleton from "./skeletons/HeroSkeleton";
 import HowItWorksSkeleton from "./skeletons/HowItWorksSkeleton";
 import BannerSkeleton from "./skeletons/BannerSkeleton";
@@ -28,6 +29,7 @@ export default function Home(){
      <Suspense fallback={<HowItWorksSkeleton />}>
      <HowItWorks />
      </Suspense>
+     <SalonVideo />
      <Suspense fallback={<FaqSkeleton />}>
      <Faq />
      </Suspense>
