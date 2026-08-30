@@ -3,6 +3,7 @@ import ServiceCategories from "./ServiceCategories";
 import ServiceRow from "./ServiceRow";
 
 export default function ServiceSection() {
+
   const selectedCategory = useStore(
     (state) => state.selectedCategory
   );

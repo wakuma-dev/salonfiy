@@ -21,9 +21,10 @@ export default function Hero(){
             moment of self-care—all in one place.</p>
             <div className="flex flex-wrap items-center gap-3">
               <button className={`text-[16px] leading-[24px] font-medium border px-4 py-1.5 rounded-full cursor-pointer
-                 ${theme === "light" ? "border-black" : "border-white"}`}>Explore Salons</button>
+                 ${theme === "light" ? "border-[#e06e49]" : "border-[#D3481B]"}`}>Explore Salons</button>
               <button
-               className="text-[16px] leading-[24px] font-medium border border-transparent bg-[#722DDF] px-4 py-1.5 cursor-pointer rounded-full"
+               className="text-[16px] leading-[24px] font-medium border border-transparent bg-gradient-to-r from-[#E27753] to-[#EBA284] 
+                 px-4 py-1.5 cursor-pointer rounded-full"
                onClick={() => {
                 document.getElementById("how-it-works")?.scrollIntoView({
                   behavior: "smooth"

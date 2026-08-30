@@ -24,10 +24,10 @@ export default function ServiceDetails(){
     <main className={`w-full min-h-screen h-auto lg:border-b
         ${theme === "light" ? "bg-[#f7f7f7] text-black border-gray-300" : "bg-[#121212] text-white border-gray-700"}`}>
     <Helmet>
-        <title>Salonfiy | {service.name}</title>
+        <title>{`Salonify | ${service.name}/${service.id}`}</title>
         <meta 
         name="description" 
-        content={service.info}/>
+        content={`${service.info}`}/>
     </Helmet>
     <div className="max-w-9/10  mx-auto grid grid-cols-1 md:grid-cols-[60%_40%] h-auto">
     <div className={`py-4 flex flex-col items-start gap-2.5 lg:pr-4 lg:border-r 

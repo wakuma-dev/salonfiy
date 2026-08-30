@@ -13,7 +13,7 @@ export default function Banner(){
         }}>
             <h2 className={`md:max-w-md font-bold tracking-tight text-[27px] leading-[32px] md:text-[44px] md:leading-[46px]
                 ${theme === "light" ? "text-[#7c7464]" : "text-[#aea691]"}`}>Your Next Beauty Appointment Awaits</h2>
-            <p className="text-[16px] tracking-wide italic md:text-[18px] leading-[24px] md:leading-[28px] font-normal">Discover and book beauty services you'll love.</p>
+            <p className="text-[16px] tracking-wide italic md:text-[18px] leading-[24px] md:leading-[28px] font-medium">Discover and book beauty services you'll love.</p>
             <button className={`py-2 px-5 text-[15px] leading-[23px] rounded-full cursor-pointer ${theme === "light" ? "bg-white" : "bg-black text-white"}`}>
                 Explore Services
             </button>
