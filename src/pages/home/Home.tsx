@@ -4,8 +4,10 @@ const Hero = lazy(() => import("../home/components/Hero"));
 const HowItWorks = lazy(() => import("../home/components/HowItWorks"));
 const Banner = lazy(() => import("../home/components/Banner"));
 const Faq = lazy(() => import("../home/components/Faq"));
-import Reviews from "./components/Reviews";
-import SalonVideo from "./components/SalonVideo";
+const SalonVideo = lazy(() => import("../home/components/SalonVideo"));
+const Reviews = lazy(() => import("../home/components/Reviews"));
+import ReviewsSkeleton from "./skeletons/ReviewsSkeleton";
+import SalonVideoSkeleton from "./skeletons/SalonVideoSkeleton";
 import HeroSkeleton from "./skeletons/HeroSkeleton";
 import HowItWorksSkeleton from "./skeletons/HowItWorksSkeleton";
 import BannerSkeleton from "./skeletons/BannerSkeleton";
@@ -30,11 +32,15 @@ export default function Home(){
      <Suspense fallback={<HowItWorksSkeleton />}>
      <HowItWorks />
      </Suspense>
+     <Suspense fallback={<SalonVideoSkeleton />}>
      <SalonVideo />
+     </Suspense>
      <Suspense fallback={<FaqSkeleton />}>
      <Faq />
      </Suspense>
+     <Suspense fallback={<ReviewsSkeleton />}>
      <Reviews />
+     </Suspense>
      </>
     )
 }
