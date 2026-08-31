@@ -3,6 +3,7 @@ import Navbar from "./navbar/Navbar";
 import Tabbar from "./mobile/mobileTabbar/Tabbar";
 import Footer from "./footer/Footer";
 import ScrollToTop from "@/common/ScrollToTop";
+import NavbarLogo from "./mobile/mobileNavbar/NavbarLogo";
 export default function MainLayout(){
     const location = useLocation();
     const hideFooterRoute = [
@@ -20,6 +21,7 @@ export default function MainLayout(){
         <>
         <ScrollToTop />
         <Navbar hideMenuTabs={hideMenuTabs}/>  
+        <NavbarLogo />
         <main className="md:pt-19">
         <Outlet />
         </main>
