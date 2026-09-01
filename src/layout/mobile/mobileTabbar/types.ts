@@ -1,5 +1,5 @@
 import { type LucideIcon } from "lucide-react";
-import { Home, User, Heart } from "lucide-react";
+import { Home, User, Heart, Search } from "lucide-react";
 type TabbarProps = {
    icon: LucideIcon,
    path: string;
@@ -7,6 +7,10 @@ type TabbarProps = {
 export const tabBars: TabbarProps[] = [
     {  icon: Home,
     path: "/"},
+      {
+      icon: Search,
+      path: "/search"
+    },
     {
         icon: Heart,
         path: "/wishlist"
@@ -14,6 +18,7 @@ export const tabBars: TabbarProps[] = [
     {
       icon: User,
       path: "/profile"
-    }
+    },
+  
   
 ]

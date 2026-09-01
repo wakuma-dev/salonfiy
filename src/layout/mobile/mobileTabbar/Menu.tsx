@@ -8,7 +8,8 @@ export default function Menu(){
             return(
                 <NavLink key={tabBar.path}
                          to={tabBar.path}
-                         className={({isActive}) => `transition-colors duration-150 ${isActive ? "text-[#6d28d9]" : ""}`}>
+                         className={({isActive}) => `transition-colors duration-150 ${isActive ?
+                          "text-[#E95EB4]" : ""}`}>
                 <Icon />
                 </NavLink>
             )
