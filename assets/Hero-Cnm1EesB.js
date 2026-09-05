@@ -1,4 +1,4 @@
-import{t as e}from"./jsx-runtime-BkSabwWG.js";import{t}from"./Store-Bs5sDopL.js";import{t as n}from"./sparkles-BBOlNgUa.js";var r=e();function i(){let e=t(e=>e.theme);return(0,r.jsx)(`section`,{className:`w-full h-auto py-2 md:py-4 
+import{t as e}from"./jsx-runtime-BkSabwWG.js";import{t}from"./Store-DaoqcS-6.js";import{t as n}from"./sparkles-n14aJgIa.js";var r=e();function i(){let e=t(e=>e.theme);return(0,r.jsx)(`section`,{className:`w-full h-auto py-2 md:py-4 
     ${e===`dark`?`bg-[#111111] text-white`:`bg-[#ffffff] text-black`}`,children:(0,r.jsxs)(`div`,{className:`flex flex-col items-center justify-center text-center gap-3 p-4`,children:[(0,r.jsxs)(`div`,{className:`inline-flex items-center border gap-2 py-2 px-4 text-[14px] leading-[18px] font-bold
        text-[#e06e49] rounded-full 
         ${e===`light`?`border-[#111111]`:`border-white`}`,children:[(0,r.jsx)(n,{size:16}),`YOUR BEAUTY, YOUR MOMENT`]}),(0,r.jsx)(`h1`,{className:`text-[36px] leading-[38px] tracking-tight md:text-[60px] md:leading-[60px]
