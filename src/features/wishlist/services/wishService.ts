@@ -1,4 +1,4 @@
-import { collection, query, addDoc, updateDoc, deleteDoc, getDocs, where } from "firebase/firestore";
+import { collection, query, getDocs, where } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { FirebaseError } from "firebase/app";
 import type { WishlistProp } from "../types";

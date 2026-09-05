@@ -4,6 +4,7 @@ import { useAuthStore } from "@/features/auth/store/useAuthStore";
 import useUserProfile from "@/features/user/hooks/useUserProfile";
 import { User } from "lucide-react";
 import ThemeToggle from "@/layout/navbar/ThemeToggle";
+import ProfileInfo from "@/features/user/components/ProfileInfo";
 export default function ProfilePage() {
   const user = useAuthStore((state) => state.user);
   const { userData, loading } = useUserProfile(user?.uid)
@@ -23,6 +24,7 @@ export default function ProfilePage() {
        <div className={`py-4 flex flex-col items-start gap-3 lg:border-r
         ${theme === "light" ? "border-gray-300" : "border-gray-700" }`}>
         <h1 className="text-[30px] leading-[34px] md:text-[40px] md:leading-[42px] font-bold">Profile</h1>
+        <ProfileInfo uid={user?.uid} />
        </div>
      
         <div className="md:py-4 flex flex-col gap-3">
