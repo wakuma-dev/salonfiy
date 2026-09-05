@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import MenuButton from "./MenuButton";
 import MenuTabs from "./MenuTabs";
 import ProfileAvatar from "@/features/user/components/ProfileAvatar";
+import SearchInput from "./SearchInput";
 interface NavbarProps {
   hideMenuTabs: boolean;
 }
@@ -18,7 +19,7 @@ export default function Navbar({hideMenuTabs}: NavbarProps) {
     >
       <div className="mx-auto hidden w-[90%] items-center justify-between md:flex py-5">
         <Logo />
-        {!hideMenuTabs && <MenuTabs />}
+        {!hideMenuTabs && <SearchInput />}
         <div className="flex gap-3">
         <ProfileAvatar />
         <MenuButton />
